@@ -28,8 +28,3 @@ CMD ["conda", "run", "--name", "streamlit", "streamlit", "run", "app/streamlit_a
      "--server.address=0.0.0.0", \
      "--server.enableCORS=false"]
 
-#CMD ["streamlit", "run", "app/streamlit_app.py", \
-#     "--server.port=8501", \
-#     "--server.address=0.0.0.0", \
-#     "--server.enableCORS=false"]
-

@@ -13,8 +13,8 @@
 version: 1
 metadata:
   content_hash:
-    win-64: 4faecc65687bb14a9aa885a20154982ac30694e634c31d839a0a3a082f527cfe
-    linux-64: 53337f625bfd9ed786c0edf077acf30677d59c01d89fcd09c8823913fd18d35a
+    win-64: e7f4ab2726294ff01872edfea211372b6c616cddc28e6e28054fd2f4d8a47bb5
+    linux-64: 03bc09a77fc3860fd6299eec56d411cc324624f600f3b4b146f700fc38a4911a
   channels:
   - url: conda-forge
     used_env_vars: []
@@ -920,22 +920,6 @@ package:
     sha256: ab29d57dc70786c1269633ba3dff20288b81664d3ff8d21af995742e2bb03287
   category: main
   optional: false
-- name: cyrus-sasl
-  version: 2.1.27
-  manager: conda
-  platform: linux-64
-  dependencies:
-    krb5: '>=1.21.1,<1.22.0a0'
-    libgcc-ng: '>=12'
-    libntlm: ''
-    libstdcxx-ng: '>=12'
-    openssl: '>=3.1.1,<4.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/cyrus-sasl-2.1.27-h54b06d7_7.conda
-  hash:
-    md5: dce22f70b4e5a407ce88f2be046f4ceb
-    sha256: d2ea5e52da745c4249e1a818095a28f9c57bd4df22cbfc645352defa468e86c2
-  category: main
-  optional: false
 - name: gflags
   version: 2.2.2
   manager: conda
@@ -1106,20 +1090,6 @@ package:
   hash:
     md5: 8b189310083baabfb622af68fd9d3ae3
     sha256: 71e750d509f5fa3421087ba88ef9a7b9be11c53174af3aa4d06aff4c18b38e8e
-  category: main
-  optional: false
-- name: icu
-  version: '75.1'
-  manager: conda
-  platform: win-64
-  dependencies:
-    ucrt: '>=10.0.20348.0'
-    vc: '>=14.2,<15'
-    vc14_runtime: '>=14.29.30139'
-  url: https://conda.anaconda.org/conda-forge/win-64/icu-75.1-he0c23c2_0.conda
-  hash:
-    md5: 8579b6bb8d18be7c0b27fb08adeeeb40
-    sha256: 1d04369a1860a1e9e371b9fc82dd0092b616adcf057d6c88371856669280e920
   category: main
   optional: false
 - name: idna
@@ -2367,19 +2337,6 @@ package:
     sha256: b0f2b3695b13a989f75d8fd7f4778e1c7aabe3b36db83f0fe80b2cd812c0e975
   category: main
   optional: false
-- name: libntlm
-  version: '1.8'
-  manager: conda
-  platform: linux-64
-  dependencies:
-    __glibc: '>=2.17,<3.0.a0'
-    libgcc: '>=13'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libntlm-1.8-hb9d3cd8_0.conda
-  hash:
-    md5: 7c7927b404672409d9917d49bff5f2d6
-    sha256: 3b3f19ced060013c2dd99d9d46403be6d319d4601814c772a3472fe2955612b0
-  category: main
-  optional: false
 - name: libopenblas
   version: 0.3.29
   manager: conda
@@ -2486,40 +2443,6 @@ package:
   hash:
     md5: ad620e92b82d2948bc019e029c574ebb
     sha256: e12c46ca882080d901392ae45e0e5a1c96fc3e5acd5cd1a23c2632eb7f024f26
-  category: main
-  optional: false
-- name: libpq
-  version: '17.5'
-  manager: conda
-  platform: linux-64
-  dependencies:
-    __glibc: '>=2.17,<3.0.a0'
-    icu: '>=75.1,<76.0a0'
-    krb5: '>=1.21.3,<1.22.0a0'
-    libgcc: '>=13'
-    openldap: '>=2.6.9,<2.7.0a0'
-    openssl: '>=3.5.0,<4.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libpq-17.5-h27ae623_0.conda
-  hash:
-    md5: 6458be24f09e1b034902ab44fe9de908
-    sha256: 2dbcef0db82e0e7b6895b6c0dadd3d36c607044c40290c7ca10656f3fca3166f
-  category: main
-  optional: false
-- name: libpq
-  version: '17.5'
-  manager: conda
-  platform: win-64
-  dependencies:
-    icu: '>=75.1,<76.0a0'
-    krb5: '>=1.21.3,<1.22.0a0'
-    openssl: '>=3.5.0,<4.0a0'
-    ucrt: '>=10.0.20348.0'
-    vc: '>=14.2,<15'
-    vc14_runtime: '>=14.29.30139'
-  url: https://conda.anaconda.org/conda-forge/win-64/libpq-17.5-h9087029_0.conda
-  hash:
-    md5: 20c5cbf2edb51467b7bc1dc81bc685d0
-    sha256: d42dc82350648bcae4857a030893e848a3af09aef86c5d50ebd2339959031cc0
   category: main
   optional: false
 - name: libprotobuf
@@ -3106,23 +3029,6 @@ package:
     sha256: 410175815df192f57a07c29a6b3fdd4231937173face9e63f0830c1234272ce3
   category: main
   optional: false
-- name: openldap
-  version: 2.6.10
-  manager: conda
-  platform: linux-64
-  dependencies:
-    __glibc: '>=2.17,<3.0.a0'
-    cyrus-sasl: '>=2.1.27,<3.0a0'
-    krb5: '>=1.21.3,<1.22.0a0'
-    libgcc: '>=13'
-    libstdcxx: '>=13'
-    openssl: '>=3.5.0,<4.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/openldap-2.6.10-he970967_0.conda
-  hash:
-    md5: 2e5bf4f1da39c0b32778561c3c4e5878
-    sha256: cb0b07db15e303e6f0a19646807715d28f1264c6350309a559702f4f34f37892
-  category: main
-  optional: false
 - name: openssl
   version: 3.5.0
   manager: conda
@@ -3380,40 +3286,6 @@ package:
   hash:
     md5: 7e28365a03635b474f4487c3d49c3394
     sha256: 34d6229002e26ef5b30283b6b62d46618dd14720b4b19b9270bc13bf3984c98e
-  category: main
-  optional: false
-- name: psycopg2
-  version: 2.9.10
-  manager: conda
-  platform: linux-64
-  dependencies:
-    __glibc: '>=2.17,<3.0.a0'
-    libgcc: '>=13'
-    libpq: '>=17.5,<18.0a0'
-    python: '>=3.13,<3.14.0a0'
-    python_abi: 3.13.*
-  url: https://conda.anaconda.org/conda-forge/linux-64/psycopg2-2.9.10-py313hd40f53e_0.conda
-  hash:
-    md5: 5e0d27af441c51b8011b4c6cac1d915a
-    sha256: 2dbf10a25bbb5e8e498facf1a11ccb12c3237ebc2948582cedb4192b94a77029
-  category: main
-  optional: false
-- name: psycopg2
-  version: 2.9.10
-  manager: conda
-  platform: win-64
-  dependencies:
-    libpq: '>=17.5,<18.0a0'
-    openssl: '>=3.5.0,<4.0a0'
-    python: '>=3.13,<3.14.0a0'
-    python_abi: 3.13.*
-    ucrt: '>=10.0.20348.0'
-    vc: '>=14.2,<15'
-    vc14_runtime: '>=14.29.30139'
-  url: https://conda.anaconda.org/conda-forge/win-64/psycopg2-2.9.10-py313h08fabc7_0.conda
-  hash:
-    md5: d36e139f5c8ca1b766fb6db27d60389e
-    sha256: de5b93f57e7b19e25815129d8fa6fd23ccaf977d19ebe2967118e8cb942f41e1
   category: main
   optional: false
 - name: pthread-stubs

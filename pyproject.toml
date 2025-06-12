@@ -1,10 +1,9 @@
 [project]
-    name = "streamlit-pg-docker"
+    name = "streamlit-docker"
     version = "0.1.0"
     dependencies = [
         #"python==3.12.2",
         "streamlit",
-        "psycopg2",
     ]
 
 [build-system]
